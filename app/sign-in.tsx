@@ -30,14 +30,14 @@ const SignIn = () => {
             <ScrollView contentContainerClassName='h-full'>
         <Image source={images.onboarding} className='w-full h-4/6' resizeMode='contain'/>
         <View className='px-10'>
-        <Text className='text-base text-center uppercase font-rubik text-black-200'>Welcome to Rellu</Text>
+        <Text className='text-base text-center uppercase font-rubik text-black-200'>Welcome to ReState</Text>
 
         <Text className='text-2xl font-rubik-bold text-black-300 text-center mt-2'>
         Let's Get You Closer to {'\n'}
         <Text className='text-primary-300'>Your Ideal Home</Text>
         </Text>
 
-        <Text className='text-lg font-rubik text-black-200 text-center mt-9'>Login to Rellu with Google</Text>
+        <Text className='text-lg font-rubik text-black-200 text-center mt-9'>Login to ReState with Google</Text>
 
         <TouchableOpacity onPress={handleLogin} className='bg-white rounded-full w-full py-3 mt-4'
         style={{
