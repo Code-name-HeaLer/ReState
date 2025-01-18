@@ -2,6 +2,8 @@ import { Image, Text, View } from "react-native";
 import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import images from "@/constants/images";
+import icons from "@/constants/icons";
+import Search from "@/components/Search";
 
 export default function Index() {
   return (
@@ -15,9 +17,10 @@ export default function Index() {
               <Text className="text-base font-rubik-medium text-black-300">Adrian</Text>
             </View>
           </View>
-
+          <Image source={icons.bell} className="size-6"/>
         </View>
       </View>
+      <Search/>
     </SafeAreaView>
   );
 }
