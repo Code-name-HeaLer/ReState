@@ -21,7 +21,7 @@ ReState is a property management app where users can explore and rent various pr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/reallu.git
+   git clone https://github.com/Code-name-HeaLer/ReState
    cd reallu
    ```
 
