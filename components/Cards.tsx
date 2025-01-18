@@ -9,7 +9,7 @@ interface Props {
 
 export const FeaturedCard = ({onPress}: Props) => {
   return (
-    <TouchableOpacity onPress={onPress} className='flex flex-col items-start w-60 h-80 relative'>
+    <TouchableOpacity onPress={onPress} className='flex flex-col items-start  relative w-60 h-80'>
         <Image source={images.japan} className='size-full rounded-2xl'/>
         <Image source={images.cardGradient} className='size-full rounded-2xl absolute bottom-0'/>
         <View className='flex flex-row items-center bg-white/90 px-3 py-1 rounded-full absolute top-5 right-5'>
