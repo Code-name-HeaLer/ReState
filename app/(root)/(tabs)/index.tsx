@@ -10,7 +10,7 @@ export default function Index() {
   return (
     <SafeAreaView className="bg-white h-full">
       <View className="px-5">
-        <View className="flex flex-row items-center justify-between mt-5">
+        <View className="flex flex-row items-center justify-between mt-1.5">
           <View className="flex flex-row">
             <Image source={images.avatar} className="size-12 rounded-full" />
             <View className="flex flex-col items-start ml-2 justify-center">
@@ -23,14 +23,29 @@ export default function Index() {
         <Search />
         <View className="my-5">
           <View className="flex flex-row items-center justify-between">
-            <Text className="text-xl font-rubik-bold text-black-300 mb-2.5">Featured</Text>
+            <Text className="text-xl font-rubik-bold text-black-300 mb-1">Featured</Text>
             <TouchableOpacity>
-              <Text className="text-base font-rubik-bold text-primary-300 mb-2.5">See All</Text>
+              <Text className="text-base font-rubik-bold text-primary-300 mb-1">See All</Text>
             </TouchableOpacity>
           </View>
+          <View className="flex flex-row gap-5 mt-2.5">
           <FeaturedCard />
-          <Card />
+          <FeaturedCard />
+          </View>
         </View>
+
+        <View className="flex flex-row items-center justify-between">
+            <Text className="text-xl font-rubik-bold text-black-300 mb-1">Our Recommendations</Text>
+            <TouchableOpacity>
+              <Text className="text-base font-rubik-bold text-primary-300 mb-1">See All</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View className="flex flex-row gap-5">
+            <Card/>
+            <Card/>
+          </View>
+
       </View>
 
     </SafeAreaView>
